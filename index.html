@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <input type="text" id="first-class" name="first-class" value="Andrey"/>
+    <br>
+    <textarea id="jsontoparse" rows="4" cols="100">
+    </textarea>
+    <button type="button" id="transform">Preview</button>
+    <button type="button" id="download">Download File</button>
+
+    <pre id="print-square">
+    </pre>
+    <textarea id="print-mapped" onclick="this.focus();this.select();document.execCommand('copy');" rows="50" cols="100">
+
+    </textarea>
+
+
+
+</body>
+
+</html>
