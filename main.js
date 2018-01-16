@@ -185,6 +185,9 @@ function print(data) {
 
 function printMapped(data) {
     $('#print-mapped').html(data);
+    $('pre code').each(function (i, block) {
+        hljs.highlightBlock(block);
+    });
 }
 
 function downloadFile(filename, text) {
