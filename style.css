@@ -1,0 +1,77 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-1 {
+    max-width: 800px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-2 {
+    max-width: 800px;
+    width: 100%;
+    display: block;
+    margin: 15px auto;
+}
+
+
+#first-class {
+    display: table;
+    width: 100%;
+    border: 1px solid #00000029;
+    border-radius: 4px;
+    padding: 10px 2px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#jsontoparse, #print-mapped {
+    width: 100%;
+    border: 1px solid #00000029;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+#transform {
+    font-size: 16px;
+    border: 0px;
+    background: #ef5038;
+    color: #FFF;
+    padding: 10px 30px;
+    border-radius: 4px;
+}
+
+#transform:hover, #transform:focus, #transform:active {
+    cursor: pointer;
+    background: #000000;
+    color: #FFF;
+}
+
+#download {
+    font-size: 16px;
+    border: 0px;
+    background: #ef5038;
+    color: #FFF;
+    padding: 10px 30px;
+    border-radius: 4px;
+    float: right;
+}
+
+#download:hover, #download:focus, #download:active {
+    cursor: pointer;
+    background: #000000;
+    color: #FFF;
+}
+
+#print-square {
+    text-align: center;
+    padding: 20px;
+    background: red;
+    border-radius: 6px;
+    color: #fff;
+}

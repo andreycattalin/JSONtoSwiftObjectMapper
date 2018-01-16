@@ -28,6 +28,7 @@ function generateClass() {
     parsedClasses = [];
     parsedClassesNames = [];
 
+    $('#print-square').hide();
     $('#print-square').text(' ');
     var jsonToParse = $('#jsontoparse').val();
     var firstClassName = $('#first-class').val();
@@ -36,6 +37,7 @@ function generateClass() {
         parseMapper(jsonData, firstClassName);
     } catch (error) {
         console.log(error);
+        $('#print-square').show();
         $('#print-square').text('Error ' + error.message);
     }
 
@@ -158,6 +160,7 @@ function parseMapper(jsonData, firstClassName) {
 
     } catch (error) {
         console.log(error);
+        $('#print-square').show();
         $('#print-square').text('Error ' + error.message);
     }
 }
@@ -176,6 +179,7 @@ function camelize(str) {
 }
 
 function print(data) {
+    $('#print-square').show();
     $('#print-square').html(data);
 }
 

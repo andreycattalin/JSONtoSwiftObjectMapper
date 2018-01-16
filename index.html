@@ -10,22 +10,29 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <link href="./style.css" " type="text/css" rel="stylesheet" />
 </head>
 
 <body>
 
-    <input type="text" id="first-class" name="first-class" value="Andrey"/>
-    <br>
-    <textarea id="jsontoparse" rows="4" cols="100">
-    </textarea>
-    <button type="button" id="transform">Preview</button>
-    <button type="button" id="download">Download File</button>
+    <header>
+        <h1>Object Mapper for Swift 4</h1>
+    </header>
+    <section class="section-1">
+        <input type="text" id="first-class" name="first-class" value="Main"/>
+        <textarea id="jsontoparse" rows="20" cols="100"></textarea>
+    </section>
 
-    <pre id="print-square">
-    </pre>
-    <textarea id="print-mapped" onclick="this.focus();this.select();document.execCommand('copy');" rows="50" cols="100">
+    <section class="section-1">
+            <button type="button" id="transform">Preview</button>
+            <button type="button" id="download">Download File</button>
+            <pre id="print-square" style="display: none;"></pre>
+    </section>
 
-    </textarea>
+    <section class="section-2">
+        <textarea id="print-mapped" onclick="this.focus();this.select();document.execCommand('copy');" rows="50" cols="100">
+        </textarea>
+    </section>
 
 
 
