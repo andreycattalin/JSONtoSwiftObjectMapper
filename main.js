@@ -59,9 +59,12 @@ function writeClass(name, vars) {
             const element = vars[key];
             if ($.isNumeric(key)) {
                 classComp += '\tvar _' + key + ': ' + capitalizeFirstLetter(camelize(element)) + '? \n';
+            } else if (element.indexOf("[") != -1) {
+                classComp += '\tvar ' + camelize(key) + ': [' + capitalizeFirstLetter(camelize(element)) + ']? \n';
             } else {
                 classComp += '\tvar ' + camelize(key) + ': ' + capitalizeFirstLetter(camelize(element)) + '? \n';
             }
+
         }
     }
 
